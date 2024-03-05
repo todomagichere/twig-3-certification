@@ -1,1 +1,29 @@
-site_name: My Docs
+site_name: Twig 3 certification notes
+
+theme:
+    icon:
+        repo: fontawesome/brands/bitbucket
+    font:
+        text: Montserrat
+    features:
+        - navigation.instant
+        - navigation.instant.progress
+    name: material
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+    locale: es
+    logo: img/logo.jpg
+    palette:
+        - scheme: default
+          toggle:
+              icon: material/brightness-7
+              name: Activate dark mode
+
+        - scheme: slate
+          accent: cyan
+          toggle:
+              icon: material/brightness-4
+              name: Activate blind mode
+
