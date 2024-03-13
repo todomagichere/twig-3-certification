@@ -1,6 +1,10 @@
-site_name: Twig 3 certification notes
+site_name: Apuntes para la certificación de Twig 3
+
+extra_css:
+    - assets/css/style.css
 
 theme:
+    favicon: assets/img/twig_logo.png
     icon:
         repo: fontawesome/brands/bitbucket
     font:
@@ -14,16 +18,14 @@ theme:
         - yaml
         - rust
     locale: es
-    logo: img/logo.jpg
+    logo: assets/img/twig_logo.png
     palette:
-        - scheme: default
-          toggle:
-              icon: material/brightness-7
-              name: Activate dark mode
+        scheme: slate
+        accent: green
+        primary: light green
 
-        - scheme: slate
-          accent: cyan
-          toggle:
-              icon: material/brightness-4
-              name: Activate blind mode
+nav:
+    - Basic info: index.md
 
+markdown_extensions:
+    - admonition
