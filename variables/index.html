@@ -13,7 +13,7 @@
     
     
       
-        <title>Variables - Apuntes para la certificación de Twig 3</title>
+        <title>Variables - Notes for Twig 3 certification</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#variables" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -75,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Apuntes para la certificación de Twig 3" class="md-header__button md-logo" aria-label="Apuntes para la certificación de Twig 3" data-md-component="logo">
+    <a href=".." title="Notes for Twig 3 certification" class="md-header__button md-logo" aria-label="Notes for Twig 3 certification" data-md-component="logo">
       
   <img src="../assets/img/twig_logo.png" alt="logo">
 
@@ -87,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Apuntes para la certificación de Twig 3
+            Notes for Twig 3 certification
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -160,12 +165,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Apuntes para la certificación de Twig 3" class="md-nav__button md-logo" aria-label="Apuntes para la certificación de Twig 3" data-md-component="logo">
+    <a href=".." title="Notes for Twig 3 certification" class="md-nav__button md-logo" aria-label="Notes for Twig 3 certification" data-md-component="logo">
       
   <img src="../assets/img/twig_logo.png" alt="logo">
 
     </a>
-    Apuntes para la certificación de Twig 3
+    Notes for Twig 3 certification
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -179,7 +184,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Basic info
+        Summary
       </a>
     </li>
   
@@ -199,10 +204,71 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Variables
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Variables
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-info" class="md-nav__link">
+    Main info
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-attribute" class="md-nav__link">
+    Dynamic attribute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-variables" class="md-nav__link">
+    Global Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-a-variable" class="md-nav__link">
+    Setting a variable
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -225,6 +291,51 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-info" class="md-nav__link">
+    Main info
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-attribute" class="md-nav__link">
+    Dynamic attribute
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-variables" class="md-nav__link">
+    Global Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-a-variable" class="md-nav__link">
+    Setting a variable
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -238,9 +349,19 @@
                 
 
 
-  <h1>Variables</h1>
-
-<p>Implementation</p>
+<h1 id="variables">Variables</h1>
+<h2 id="main-info">Main info</h2>
+<p>The application passes variables to the templates for manipulation in the template. Variables may have attributes or elements you can access, too. The visual representation of a variable depends heavily on the application providing it.</p>
+<p>Use a dot (.) to access attributes of a variable (methods or properties of a PHP object, or items of a PHP array):</p>
+<p><code>{{ foo.bar }}</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It's important to know that the curly braces are not part of the variable but the print statement. When accessing variables inside tags, don't put the braces around them.</p>
+</div>
+<p>If a variable or attribute does not exist, the behavior depends on the strict_variables option value (see environment options):</p>
+<p>When <code>false</code>, it returns null</p>
+<p>When <code>true</code>, it throws an exception.</p>
+<h2 id="implementation">Implementation</h2>
 <p>For convenience's sake foo.bar does the following things on the PHP layer:</p>
 <ul>
 <li>check if foo is an array and bar a valid element;</li>
@@ -258,6 +379,67 @@
 <li>if not, and if strict_variables is false, return null;</li>
 <li>if not, throw an exception.</li>
 </ul>
+<h2 id="dynamic-attribute">Dynamic attribute</h2>
+<p>If you want to access a dynamic attribute of a variable, use the attribute function instead.</p>
+<p>The attribute function is also useful when the attribute contains special characters (like - that would be interpreted as the minus operator):</p>
+<pre><code class="language-twig">{# equivalent to the non-working foo.data-foo #}
+{{ attribute(foo, 'data-foo') }}
+</code></pre>
+<h2 id="global-variables">Global Variables</h2>
+<p>The following variables are <strong>always available</strong> in templates:</p>
+<ul>
+<li>_self: references the current <strong>template name</strong>;</li>
+<li>_context: references the current <strong>context</strong>;</li>
+<li>_charset: references the current <strong>charset</strong>.</li>
+</ul>
+<h2 id="setting-a-variable">Setting a variable</h2>
+<p>Inside code blocks you can also assign values to variables. Assignments use the set tag and can have multiple targets.</p>
+<p>Here is how you can assign the bar value to the foo variable:</p>
+<pre><code class="language-twig">{% set foo = 'bar' %}
+</code></pre>
+<p>After the set call, the foo variable is available in the template like any other ones:</p>
+<pre><code class="language-twig">{# displays bar #}
+{{ foo }}
+</code></pre>
+<p>The assigned value can be any valid Twig expression:</p>
+<pre><code class="language-twig">{% set foo = [1, 2] %}
+{% set foo = {'foo': 'bar'} %}
+{% set foo = 'foo' ~ 'bar' %}
+</code></pre>
+<p>Several variables can be assigned in one block:</p>
+<pre><code class="language-twig">{% set foo, bar = 'foo', 'bar' %}
+
+{# is equivalent to #}
+
+{% set foo = 'foo' %}
+{% set bar = 'bar' %}
+</code></pre>
+<p>The set tag can also be used to 'capture' chunks of text:</p>
+<pre><code class="language-twig">{% set foo %}
+&lt;div id=&quot;pagination&quot;&gt;
+...
+&lt;/div&gt;
+{% endset %}
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>If you enable automatic output escaping, Twig will only consider the content to be safe when capturing chunks of text.</p>
+</div>
+<p>Note that loops are scoped in Twig; therefore a variable declared inside a for loop is not accessible outside the loop itself:</p>
+<pre><code class="language-twig">{% for item in list %}
+{% set foo = item %}
+{% endfor %}
+
+{# foo is NOT available #}
+</code></pre>
+<p>If you want to access the variable, just declare it before the loop:</p>
+<pre><code class="language-twig">{% set foo = &quot;&quot; %}
+{% for item in list %}
+{% set foo = item %}
+{% endfor %}
+
+{# foo is available #}
+</code></pre>
 
               
             </article>
@@ -273,7 +455,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Basic info" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Summary" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -282,7 +464,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Basic info
+              Summary
             </div>
           </div>
         </a>
