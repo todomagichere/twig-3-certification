@@ -5,6 +5,9 @@
     NOTE: The Twig 3 Certification exam only includes questions about the core features and syntax of Twig 3. It does not contain questions about official Twig extensions such as Html, Intl, Inky, String, etc.
 
 
+This summary is extracted from [Twig certification official page](https://certification.symfony.com/exams/twig.html)
+
+
 ## Basic Concepts
 
 * Basic Twig concepts
