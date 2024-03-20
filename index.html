@@ -8,12 +8,12 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="assets/img/twig_logo.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.7">
     
     
       
-        <title>Twig 3 certification notes</title>
+        <title>Apuntes para la certificación de Twig 3</title>
       
     
     
@@ -21,6 +21,10 @@
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#8bc34b">
         
       
       
@@ -36,6 +40,8 @@
       
     
     
+      <link rel="stylesheet" href="assets/css/style.css">
+    
     <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -47,16 +53,12 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-green" data-md-color-accent="green">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#summary" class="md-skip">
           Skip to content
         </a>
       
@@ -78,9 +80,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Twig 3 certification notes" class="md-header__button md-logo" aria-label="Twig 3 certification notes" data-md-component="logo">
+    <a href="." title="Apuntes para la certificación de Twig 3" class="md-header__button md-logo" aria-label="Apuntes para la certificación de Twig 3" data-md-component="logo">
       
-  <img src="img/logo.jpg" alt="logo">
+  <img src="assets/img/twig_logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -90,40 +92,18 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Twig 3 certification notes
+            Apuntes para la certificación de Twig 3
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Basic info
             
           </span>
         </div>
       </div>
     </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Activate dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Activate dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="cyan"  aria-label="Activate blind mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Activate blind mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
     
     
     
@@ -185,12 +165,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Twig 3 certification notes" class="md-nav__button md-logo" aria-label="Twig 3 certification notes" data-md-component="logo">
+    <a href="." title="Apuntes para la certificación de Twig 3" class="md-nav__button md-logo" aria-label="Apuntes para la certificación de Twig 3" data-md-component="logo">
       
-  <img src="img/logo.jpg" alt="logo">
+  <img src="assets/img/twig_logo.png" alt="logo">
 
     </a>
-    Twig 3 certification notes
+    Apuntes para la certificación de Twig 3
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -213,12 +193,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Welcome to MkDocs
+          Basic info
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        Welcome to MkDocs
+        Basic info
       </a>
       
         
@@ -237,15 +217,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#basic-concepts" class="md-nav__link">
+    Basic Concepts
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#filters" class="md-nav__link">
+    Filters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-structures" class="md-nav__link">
+    Control Structures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-and-expressions" class="md-nav__link">
+    Variables and Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-re-use" class="md-nav__link">
+    Template Re-use
   </a>
   
 </li>
@@ -254,6 +276,21 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="variables/" class="md-nav__link">
+        Variables
+      </a>
     </li>
   
 
@@ -285,15 +322,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#basic-concepts" class="md-nav__link">
+    Basic Concepts
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#filters" class="md-nav__link">
+    Filters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-structures" class="md-nav__link">
+    Control Structures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-and-expressions" class="md-nav__link">
+    Variables and Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-re-use" class="md-nav__link">
+    Template Re-use
   </a>
   
 </li>
@@ -312,21 +391,55 @@
                 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="summary">Summary</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>NOTE: The Twig 3 Certification exam only includes questions about the core features and syntax of Twig 3. It does not contain questions about official Twig extensions such as Html, Intl, Inky, String, etc.</p>
+</div>
+<h2 id="basic-concepts">Basic Concepts</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Basic Twig concepts</li>
+<li>Twig syntax</li>
+<li>Escaping</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h2 id="filters">Filters</h2>
+<ul>
+<li>Built-in Twig filters and their parameters</li>
+<li>Chaining filters</li>
+<li>Alternative filter syntax</li>
+</ul>
+<h2 id="tests">Tests</h2>
+<ul>
+<li>Built-in Twig tests</li>
+<li>Combining tests and conditional expressions</li>
+</ul>
+<h2 id="control-structures">Control Structures</h2>
+<ul>
+<li>Loops</li>
+<li>Conditionals</li>
+<li>Combining loops and conditionals</li>
+</ul>
+<h2 id="variables-and-expressions">Variables and Expressions</h2>
+<ul>
+<li>Defining variables</li>
+<li>Accessing simple and complex variables</li>
+<li>Expressions</li>
+</ul>
+<h2 id="functions">Functions</h2>
+<ul>
+<li>Built-in Twig functions and their arguments</li>
+</ul>
+<h2 id="operators">Operators</h2>
+<ul>
+<li>Built-in Twig operators</li>
+<li>Combining operators</li>
+</ul>
+<h2 id="template-re-use">Template Re-use</h2>
+<ul>
+<li>Basic and multi-level inheritance</li>
+<li>Including template fragment</li>
+<li>Embedding templates</li>
+</ul>
 
               
             </article>
@@ -337,6 +450,27 @@ docs/
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+      
+        
+        <a href="variables/" class="md-footer__link md-footer__link--next" aria-label="Next: Variables" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Variables
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
