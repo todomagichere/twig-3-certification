@@ -26,7 +26,10 @@ theme:
 
 markdown_extensions:
     - admonition
-
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
 
 nav:
     - Summary: index.md
@@ -52,7 +55,7 @@ nav:
     - Functions:
         - Built-in Twig functions and their arguments: index.md
     - Operators:
-        - Built-in Twig operators: index.md
+        - Built-in Twig operators: operators.md
         - Combining operators: index.md
     - Template Re-use:
         - Basic and multi-level inheritance: index.md
