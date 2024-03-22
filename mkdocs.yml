@@ -17,7 +17,7 @@ theme:
     hljs_languages:
         - yaml
         - rust
-    locale: es
+    locale: en
     logo: assets/img/twig_logo.png
     palette:
         scheme: slate
