@@ -33,31 +33,31 @@ markdown_extensions:
 
 nav:
     - Summary: index.md
-    - Basic Concepts:
-        - Basic Twig concepts: index.md
-        - Twig syntax: index.md
-        - Escaping: index.md
-    - Filters:
-        - Built-in Twig filters and their parameters: index.md
-        - Chaining filters: index.md
-        - Alternative filter syntax: index.md
-    - Tests:
-        - Built-in Twig tests: index.md
-        - Combining tests and conditional expressions: index.md
-    - Control Structures:
-        - Loops: index.md
-        - Conditionals: index.md
-        - Combining loops and conditionals: index.md
+#    - Basic Concepts:
+#        - Basic Twig concepts: index.md
+#        - Twig syntax: index.md
+#        - Escaping: index.md
+#    - Filters:
+#        - Built-in Twig filters and their parameters: index.md
+#        - Chaining filters: index.md
+#        - Alternative filter syntax: index.md
+#    - Tests:
+#        - Built-in Twig tests: index.md
+#        - Combining tests and conditional expressions: index.md
+#    - Control Structures:
+#        - Loops: index.md
+#        - Conditionals: index.md
+#        - Combining loops and conditionals: index.md
     - Variables and Expressions:
         - Defining variables: defining_variables.md
         - Accessing simple and complex variables: variables.md
         - Expressions: expressions.md
-    - Functions:
-        - Built-in Twig functions and their arguments: index.md
+#    - Functions:
+#        - Built-in Twig functions and their arguments: index.md
     - Operators:
         - Built-in Twig operators: operators.md
-        - Combining operators: index.md
-    - Template Re-use:
-        - Basic and multi-level inheritance: index.md
-        - Including template fragment: index.md
-        - Embedding templates: index.md
+#        - Combining operators: index.md
+#    - Template Re-use:
+#        - Basic and multi-level inheritance: index.md
+#        - Including template fragment: index.md
+#        - Embedding templates: index.md
