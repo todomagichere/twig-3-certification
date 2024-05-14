@@ -37,12 +37,12 @@ nav:
 #        - Basic Twig concepts: index.md
 #        - Twig syntax: index.md
 #        - Escaping: index.md
-#    - Filters:
-#        - Built-in Twig filters and their parameters: index.md
+    - Filters:
+        - Built-in Twig filters and their parameters: filters.md
 #        - Chaining filters: index.md
 #        - Alternative filter syntax: index.md
-#    - Tests:
-#        - Built-in Twig tests: index.md
+    - Tests:
+        - Built-in Twig tests: tests.md
 #        - Combining tests and conditional expressions: index.md
 #    - Control Structures:
 #        - Loops: index.md
@@ -52,8 +52,8 @@ nav:
         - Defining variables: defining_variables.md
         - Accessing simple and complex variables: variables.md
         - Expressions: expressions.md
-#    - Functions:
-#        - Built-in Twig functions and their arguments: index.md
+    - Functions:
+        - Built-in Twig functions and their arguments: functions.md
     - Operators:
         - Built-in Twig operators: operators.md
 #        - Combining operators: index.md
@@ -61,3 +61,4 @@ nav:
 #        - Basic and multi-level inheritance: index.md
 #        - Including template fragment: index.md
 #        - Embedding templates: index.md
+    - Tags: tags.md
