@@ -1,5 +1,3 @@
-# Functions
-
 ## attribute
 
 ## block

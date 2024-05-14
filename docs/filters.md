@@ -1,6 +1,3 @@
-# Filters
-
-
 ## abs
 
 ## batch
