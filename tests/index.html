@@ -672,14 +672,85 @@
   <h1>Built-in Twig tests</h1>
 
 <h2 id="constant">constant</h2>
+<p><code>constant</code> checks if a variable has the exact same value as a constant. You can use either global constants or class constants:</p>
+<div class="language-text highlight"><pre><span></span><code>{% if post.status is constant(&#39;Post::PUBLISHED&#39;) %}
+    the status attribute is exactly the same as Post::PUBLISHED
+{% endif %}
+</code></pre></div>
+<p>You can test constants from object instances as well:</p>
+<div class="language-text highlight"><pre><span></span><code>{% if post.status is constant(&#39;PUBLISHED&#39;, post) %}
+    the status attribute is exactly the same as Post::PUBLISHED
+{% endif %}
+</code></pre></div>
 <h2 id="defined">defined</h2>
+<p><code>defined</code> checks if a variable is defined in the current context. This is very useful if you use the <code>strict_variables</code> option:</p>
+<div class="language-text highlight"><pre><span></span><code>{# defined works with variable names #}
+{% if foo is defined %}
+...
+{% endif %}
+
+{# and attributes on variables names #}
+{% if foo.bar is defined %}
+...
+{% endif %}
+
+{% if foo[&#39;bar&#39;] is defined %}
+...
+{% endif %}
+</code></pre></div>
+<p>When using the <code>defined</code> test on an expression that uses variables in some method calls, be sure that they are all defined first:</p>
+<div class="language-text highlight"><pre><span></span><code>{% if var is defined and foo.method(var) is defined %}
+...
+{% endif %}
+</code></pre></div>
 <h2 id="divisible-by">divisible by</h2>
+<p><code>divisible by</code> checks if a variable is divisible by a number:</p>
+<div class="language-text highlight"><pre><span></span><code>{% if loop.index is divisible by(3) %}
+...
+{% endif %}
+</code></pre></div>
 <h2 id="empty">empty</h2>
+<p><code>empty</code> checks if a variable is an empty string, an empty array, an empty hash, exactly false, or exactly null.</p>
+<p>For objects that implement the Countable interface, <code>empty</code> will check the return value of the <code>count()</code> method.</p>
+<p>For objects that implement the <code>__toString()</code> magic method (and not Countable), it will check if an empty string is returned.</p>
+<div class="language-text highlight"><pre><span></span><code>{% if foo is empty %}
+...
+{% endif %}
+</code></pre></div>
 <h2 id="even">even</h2>
+<p><code>even</code> returns true if the given number is even:</p>
+<div class="language-text highlight"><pre><span></span><code>{{ var is even }}
+</code></pre></div>
 <h2 id="iterable">iterable</h2>
+<p><code>iterable</code> checks if a variable is an array or a traversable object:</p>
+<div class="language-text highlight"><pre><span></span><code>{# evaluates to true if the foo variable is iterable #}
+{% if users is iterable %}
+    {% for user in users %}
+        Hello {{ user }}!
+    {% endfor %}
+{% else %}
+    {# users is probably a string #}
+    Hello {{ users }}!
+{% endif %}
+</code></pre></div>
 <h2 id="null">null</h2>
+<p><code>null</code> returns true if the variable is null:</p>
+<div class="language-text highlight"><pre><span></span><code>{{ var is null }}
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>none is an alias for null.</p>
+</div>
 <h2 id="odd">odd</h2>
+<p><code>odd</code> returns true if the given number is odd:</p>
+<div class="language-text highlight"><pre><span></span><code>{{ var is odd }}
+</code></pre></div>
 <h2 id="same-as">same as</h2>
+<p><code>same as</code> checks if a variable is the same as another variable. This is equivalent to <code>===</code> in PHP:</p>
+<div class="language-text highlight"><pre><span></span><code>{% if foo.attribute is same as(false) %}
+    the foo attribute really is the &#39;false&#39; PHP value
+{% endif %}
+</code></pre></div>
 
               
             </article>
