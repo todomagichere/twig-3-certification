@@ -1,0 +1,1110 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/img/twig_logo.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.7">
+    
+    
+      
+        <title>Test 1 - Notes for Twig 3 certification</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#8bc34b">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="light-green" data-md-color-accent="green">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#twig-3-certification-exam" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Notes for Twig 3 certification" class="md-header__button md-logo" aria-label="Notes for Twig 3 certification" data-md-component="logo">
+      
+  <img src="../../assets/img/twig_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Notes for Twig 3 certification
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Test 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Notes for Twig 3 certification" class="md-nav__button md-logo" aria-label="Notes for Twig 3 certification" data-md-component="logo">
+      
+  <img src="../../assets/img/twig_logo.png" alt="logo">
+
+    </a>
+    Notes for Twig 3 certification
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Example tests
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Example tests" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Example tests
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Test 1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Test 1
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#twig-3-certification-exam" class="md-nav__link">
+    Twig 3 Certification Exam
+  </a>
+  
+    <nav class="md-nav" aria-label="Twig 3 Certification Exam">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#topic-1-basic-concepts" class="md-nav__link">
+    Topic 1: Basic Concepts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-2-filters" class="md-nav__link">
+    Topic 2: Filters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-3-tests" class="md-nav__link">
+    Topic 3: Tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-4-control-structures" class="md-nav__link">
+    Topic 4: Control Structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-5-variables-and-expressions" class="md-nav__link">
+    Topic 5: Variables and Expressions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-6-functions" class="md-nav__link">
+    Topic 6: Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-7-operators" class="md-nav__link">
+    Topic 7: Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-8-template-re-use" class="md-nav__link">
+    Topic 8: Template Re-use
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-answers" class="md-nav__link">
+    Key Answers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers-for-the-twig-3-certification-exam" class="md-nav__link">
+    Answers for the Twig 3 Certification Exam
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Filters
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Filters" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Filters
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../filters/" class="md-nav__link">
+        Built-in Twig filters and their parameters
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Tests
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tests" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tests
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tests/" class="md-nav__link">
+        Built-in Twig tests
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Variables and Expressions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Variables and Expressions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Variables and Expressions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../defining_variables/" class="md-nav__link">
+        Defining variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/" class="md-nav__link">
+        Accessing simple and complex variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../expressions/" class="md-nav__link">
+        Expressions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Functions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Functions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/" class="md-nav__link">
+        Built-in Twig functions and their arguments
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Operators
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Operators" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Operators
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operators/" class="md-nav__link">
+        Built-in Twig operators
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#twig-3-certification-exam" class="md-nav__link">
+    Twig 3 Certification Exam
+  </a>
+  
+    <nav class="md-nav" aria-label="Twig 3 Certification Exam">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#topic-1-basic-concepts" class="md-nav__link">
+    Topic 1: Basic Concepts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-2-filters" class="md-nav__link">
+    Topic 2: Filters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-3-tests" class="md-nav__link">
+    Topic 3: Tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-4-control-structures" class="md-nav__link">
+    Topic 4: Control Structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-5-variables-and-expressions" class="md-nav__link">
+    Topic 5: Variables and Expressions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-6-functions" class="md-nav__link">
+    Topic 6: Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-7-operators" class="md-nav__link">
+    Topic 7: Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-8-template-re-use" class="md-nav__link">
+    Topic 8: Template Re-use
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-answers" class="md-nav__link">
+    Key Answers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers-for-the-twig-3-certification-exam" class="md-nav__link">
+    Answers for the Twig 3 Certification Exam
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Test 1</h1>
+
+<h3 id="twig-3-certification-exam">Twig 3 Certification Exam</h3>
+<p><strong>Instructions</strong>: Choose the correct answer(s) for each question. You have 60 minutes to complete this exam. Some questions may have multiple correct answers.</p>
+<hr />
+<h4 id="topic-1-basic-concepts">Topic 1: Basic Concepts</h4>
+<p><strong>1. What is the correct syntax to print a variable in Twig?</strong><br />
+a) <code>{ variable }</code><br />
+b) <code>{{ variable }}</code><br />
+c) <code>{% variable %}</code><br />
+d) <code>{# variable #}</code></p>
+<p><strong>2. How do you escape output to prevent XSS attacks in Twig?</strong><br />
+a) <code>{{ variable|escape }}</code><br />
+b) <code>{{ variable|e }}</code><br />
+c) <code>{{ variable|safe }}</code><br />
+d) <code>{{ variable|xss }}</code></p>
+<p><strong>3. Which of the following comments is correctly written in Twig?</strong><br />
+a) <code>{* This is a comment *}</code><br />
+b) <code>{% This is a comment %}</code><br />
+c) <code>{# This is a comment #}</code><br />
+d) <code>&lt;!-- This is a comment --&gt;</code></p>
+<p><strong>4. What is the output of <code>{{ "Hello &lt;b&gt;World&lt;/b&gt;"|escape }}</code>?</strong><br />
+a) <code>Hello &lt;b&gt;World&lt;/b&gt;</code><br />
+b) <code>Hello &amp;lt;b&amp;gt;World&amp;lt;/b&amp;gt;</code><br />
+c) <code>Hello &amp;amp;lt;b&amp;amp;gt;World&amp;amp;lt;/b&amp;amp;gt;</code><br />
+d) <code>Hello &lt;b&gt;World&lt;/b&gt;</code></p>
+<p><strong>5. What does the following Twig code do? <code>{{ variable|default('default value') }}</code></strong><br />
+a) Sets <code>variable</code> to 'default value'<br />
+b) Prints 'default value' if <code>variable</code> is not defined or empty<br />
+c) Raises an error if <code>variable</code> is not defined<br />
+d) Applies a default filter to <code>variable</code></p>
+<hr />
+<h4 id="topic-2-filters">Topic 2: Filters</h4>
+<p><strong>6. How do you apply a filter to convert a variable to uppercase in Twig?</strong><br />
+a) <code>{{ variable|uppercase }}</code><br />
+b) <code>{{ variable|upper }}</code><br />
+c) <code>{{ variable|toUpper }}</code><br />
+d) <code>{{ variable|capitalize }}</code></p>
+<p><strong>7. How do you format a date in Twig?</strong><br />
+a) <code>{{ date|date('Y-m-d') }}</code><br />
+b) <code>{{ date|format('Y-m-d') }}</code><br />
+c) <code>{{ date|strftime('Y-m-d') }}</code><br />
+d) <code>{{ date|datetime('Y-m-d') }}</code></p>
+<p><strong>8. How do you chain multiple filters in Twig?</strong><br />
+a) <code>{{ variable|filter1|filter2 }}</code><br />
+b) <code>{{ variable|(filter1, filter2) }}</code><br />
+c) <code>{{ variable|filter1(filter2) }}</code><br />
+d) <code>{{ variable|filter1.filter2 }}</code></p>
+<p><strong>9. Which filter would you use to join an array into a string in Twig?</strong><br />
+a) <code>{{ array|join(', ') }}</code><br />
+b) <code>{{ array|concat(', ') }}</code><br />
+c) <code>{{ array|implode(', ') }}</code><br />
+d) <code>{{ array|merge(', ') }}</code></p>
+<p><strong>10. What is the alternative syntax for applying the <code>upper</code> filter to a variable in Twig?</strong><br />
+a) <code>{{ upper(variable) }}</code><br />
+b) <code>{{ variable|uppercase }}</code><br />
+c) <code>{% filter upper %}{{ variable }}{% endfilter %}</code><br />
+d) <code>{% apply upper %}{{ variable }}{% endapply %}</code></p>
+<hr />
+<h4 id="topic-3-tests">Topic 3: Tests</h4>
+<p><strong>11. How do you check if a variable is defined in Twig?</strong><br />
+a) <code>{% if variable is defined %}</code><br />
+b) <code>{% if variable is not empty %}</code><br />
+c) <code>{% if variable exists %}</code><br />
+d) <code>{% if variable is set %}</code></p>
+<p><strong>12. Which of the following tests if a variable is empty in Twig?</strong><br />
+a) <code>{% if variable is null %}</code><br />
+b) <code>{% if variable is empty %}</code><br />
+c) <code>{% if variable is none %}</code><br />
+d) <code>{% if variable is blank %}</code></p>
+<p><strong>13. How do you combine tests to check if a variable is defined and not empty in Twig?</strong><br />
+a) <code>{% if variable is defined and variable is not empty %}</code><br />
+b) <code>{% if variable exists and variable is not empty %}</code><br />
+c) <code>{% if variable is defined and not empty %}</code><br />
+d) <code>{% if variable exists and not empty %}</code></p>
+<p><strong>14. How do you test if a string contains a specific substring in Twig?</strong><br />
+a) <code>{% if "substring" in string %}</code><br />
+b) <code>{% if string contains "substring" %}</code><br />
+c) <code>{% if string has "substring" %}</code><br />
+d) <code>{% if string includes "substring" %}</code></p>
+<p><strong>15. Which of the following tests if an array is iterable in Twig?</strong><br />
+a) <code>{% if array is iterable %}</code><br />
+b) <code>{% if array is array %}</code><br />
+c) <code>{% if array is traversable %}</code><br />
+d) <code>{% if array is list %}</code></p>
+<hr />
+<h4 id="topic-4-control-structures">Topic 4: Control Structures</h4>
+<p><strong>16. What is the correct structure for a <code>for</code> loop in Twig?</strong><br />
+a) <code>{% foreach item in items %}</code><br />
+b) <code>{% while item in items %}</code><br />
+c) <code>{% loop item in items %}</code><br />
+d) <code>{% for item in items %}</code></p>
+<p><strong>17. Which of the following statements correctly create an <code>if</code> condition in Twig?</strong><br />
+a) <code>{% if condition %} ... {% endif %}</code><br />
+b) <code>{% if condition then %} ... {% end %}</code><br />
+c) <code>{% if (condition) %} ... {% endif %}</code><br />
+d) <code>{% if (condition) then %} ... {% endif %}</code></p>
+<p><strong>18. How do you write an <code>else if</code> condition in Twig?</strong><br />
+a) <code>{% else if condition %}</code><br />
+b) <code>{% elseif condition %}</code><br />
+c) <code>{% elif condition %}</code><br />
+d) <code>{% ifelse condition %}</code></p>
+<p><strong>19. What is the correct way to use a <code>for</code> loop with an index in Twig?</strong><br />
+a) <code>{% for item in items with index %}</code><br />
+b) <code>{% for item, index in items %}</code><br />
+c) <code>{% for index, item in items %}</code><br />
+d) <code>{% for item in items, index %}</code></p>
+<p><strong>20. How do you combine a <code>for</code> loop and an <code>if</code> condition in Twig?</strong><br />
+a) <code>{% for item in items if condition %}</code><br />
+b) <code>{% for item in items %} {% if condition %}</code><br />
+c) <code>{% if condition %} {% for item in items %}</code><br />
+d) <code>{% for item in items %} {% if condition %} ... {% endif %} {% endfor %}</code></p>
+<hr />
+<h4 id="topic-5-variables-and-expressions">Topic 5: Variables and Expressions</h4>
+<p><strong>21. How do you define a variable in Twig?</strong><br />
+a) <code>{% set variable = value %}</code><br />
+b) <code>{% define variable = value %}</code><br />
+c) <code>{% var variable = value %}</code><br />
+d) <code>{% let variable = value %}</code></p>
+<p><strong>22. How do you access an element of an array in Twig?</strong><br />
+a) <code>{{ array.element }}</code><br />
+b) <code>{{ array[element] }}</code><br />
+c) <code>{{ array-&gt;element }}</code><br />
+d) <code>{{ array:element }}</code></p>
+<p><strong>23. How do you access a property of an object in Twig?</strong><br />
+a) <code>{{ object.property }}</code><br />
+b) <code>{{ object[property] }}</code><br />
+c) <code>{{ object-&gt;property }}</code><br />
+d) <code>{{ object:property }}</code></p>
+<p><strong>24. Which of the following is the correct syntax to increment a variable in Twig?</strong><br />
+a) <code>{% set variable = variable + 1 %}</code><br />
+b) <code>{% increment variable %}</code><br />
+c) <code>{% variable++ %}</code><br />
+d) <code>{% var variable = variable + 1 %}</code></p>
+<p><strong>25. How do you use a ternary operator in Twig?</strong><br />
+a) <code>{{ condition ? 'true value' : 'false value' }}</code><br />
+b) <code>{{ condition ? 'true value' else 'false value' }}</code><br />
+c) <code>{% if condition ? 'true value' : 'false value' %}</code><br />
+d) <code>{% condition ? 'true value' : 'false value' %}</code></p>
+<hr />
+<h4 id="topic-6-functions">Topic 6: Functions</h4>
+<p><strong>26. Which function is used to cycle through values in Twig?</strong><br />
+a) <code>{{ cycle(['odd', 'even'], loop.index) }}</code><br />
+b) <code>{{ loop(['odd', 'even'], index) }}</code><br />
+c) <code>{{ iterate(['odd', 'even'], loop.index) }}</code><br />
+d) <code>{{ rotate(['odd', 'even'], loop.index) }}</code></p>
+<p><strong>27. How do you include another template in Twig?</strong><br />
+a) <code>{% include 'template.html.twig' %}</code><br />
+b) <code>{% import 'template.html.twig' %}</code><br />
+c) <code>{% embed 'template.html.twig' %}</code><br />
+d) <code>{% extend 'template.html.twig' %}</code></p>
+<p><strong>28. Which function is used to dump information about a variable for debugging purposes in Twig?</strong><br />
+a) <code>{{ dump(variable) }}</code><br />
+b) <code>{{ var_dump(variable) }}</code><br />
+c) <code>{{ debug(variable) }}</code><br />
+d) <code>{{ print_r(variable) }}</code></p>
+<p><strong>29. How do you create a range of numbers in Twig?</strong><br />
+a) `{{ range(1, 10)</p>
+<p>}}<code>b)</code>{{ 1..10 }}<code>c)</code>{{ 1 to 10 }}<code>d)</code>{{ sequence(1, 10) }}`</p>
+<p><strong>30. Which function is used to get the length of an array or string in Twig?</strong><br />
+a) <code>{{ length(variable) }}</code><br />
+b) <code>{{ count(variable) }}</code><br />
+c) <code>{{ size(variable) }}</code><br />
+d) <code>{{ variable.length }}</code></p>
+<hr />
+<h4 id="topic-7-operators">Topic 7: Operators</h4>
+<p><strong>31. What is the correct way to compare if two variables are equal in Twig?</strong><br />
+a) <code>{% if variable1 == variable2 %}</code><br />
+b) <code>{% if variable1 === variable2 %}</code><br />
+c) <code>{% if variable1 eq variable2 %}</code><br />
+d) <code>{% if variable1 equal variable2 %}</code></p>
+<p><strong>32. Which of the following are logical operators in Twig?</strong><br />
+a) <code>and</code><br />
+b) <code>&amp;&amp;</code><br />
+c) <code>or</code><br />
+d) <code>||</code></p>
+<p><strong>33. How do you perform a modulo operation in Twig?</strong><br />
+a) <code>{% set result = variable % 2 %}</code><br />
+b) <code>{% set result = variable mod 2 %}</code><br />
+c) <code>{% set result = variable % 2 %}</code><br />
+d) <code>{% set result = variable % 2 %}</code></p>
+<p><strong>34. Which of the following operators can be used to concatenate strings in Twig?</strong><br />
+a) <code>~</code><br />
+b) <code>+</code><br />
+c) <code>&amp;</code><br />
+d) <code>.</code></p>
+<p><strong>35. How do you negate a condition in Twig?</strong><br />
+a) <code>{% if not condition %}</code><br />
+b) <code>{% if !condition %}</code><br />
+c) <code>{% if ~condition %}</code><br />
+d) <code>{% if -condition %}</code></p>
+<hr />
+<h4 id="topic-8-template-re-use">Topic 8: Template Re-use</h4>
+<p><strong>36. What is the correct way to extend a template in Twig?</strong><br />
+a) <code>{% extend 'base.html.twig' %}</code><br />
+b) <code>{% include 'base.html.twig' %}</code><br />
+c) <code>{% inherit 'base.html.twig' %}</code><br />
+d) <code>{% extends 'base.html.twig' %}</code></p>
+<p><strong>37. How do you define a block in a Twig template?</strong><br />
+a) <code>{% block blockname %}...{% endblock %}</code><br />
+b) <code>{% section blockname %}...{% endsection %}</code><br />
+c) <code>{% define blockname %}...{% enddefine %}</code><br />
+d) <code>{% part blockname %}...{% endpart %}</code></p>
+<p><strong>38. Which of the following is the correct syntax to embed a template within another template in Twig?</strong><br />
+a) <code>{% include 'template.html.twig' %}</code><br />
+b) <code>{% import 'template.html.twig' %}</code><br />
+c) <code>{% embed 'template.html.twig' %}</code><br />
+d) <code>{% extend 'template.html.twig' %}</code></p>
+<p><strong>39. How do you include a template fragment in Twig?</strong><br />
+a) <code>{% include 'fragment.html.twig' %}</code><br />
+b) <code>{% import 'fragment.html.twig' %}</code><br />
+c) <code>{% embed 'fragment.html.twig' %}</code><br />
+d) <code>{% extend 'fragment.html.twig' %}</code></p>
+<p><strong>40. How do you use multi-level inheritance in Twig?</strong><br />
+a) <code>{% extends 'grandparent.html.twig' %}</code> in parent and <code>{% extends 'parent.html.twig' %}</code> in child<br />
+b) <code>{% include 'grandparent.html.twig' %}</code> in parent and <code>{% include 'parent.html.twig' %}</code> in child<br />
+c) <code>{% inherit 'grandparent.html.twig' %}</code> in parent and <code>{% inherit 'parent.html.twig' %}</code> in child<br />
+d) <code>{% embed 'grandparent.html.twig' %}</code> in parent and <code>{% embed 'parent.html.twig' %}</code> in child</p>
+<p><strong>41. Which of the following can be used to include a template fragment with a context?</strong><br />
+a) <code>{% include 'fragment.html.twig' with { 'var': value } %}</code><br />
+b) <code>{% import 'fragment.html.twig' with { 'var': value } %}</code><br />
+c) <code>{% embed 'fragment.html.twig' with { 'var': value } %}</code><br />
+d) <code>{% extend 'fragment.html.twig' with { 'var': value } %}</code></p>
+<p><strong>42. What is the purpose of the <code>{% parent %}</code> tag in Twig?</strong><br />
+a) To refer to the parent block in a child template<br />
+b) To extend the parent template<br />
+c) To include the parent template<br />
+d) To import the parent template</p>
+<p><strong>43. How do you use <code>super()</code> to refer to the parent block content in Twig?</strong><br />
+a) <code>{{ super() }}</code><br />
+b) <code>{% super() %}</code><br />
+c) <code>{{ parent() }}</code><br />
+d) <code>{% parent() %}</code></p>
+<p><strong>44. How do you prevent a block from being overridden in child templates in Twig?</strong><br />
+a) <code>{% block blockname final %}...{% endblock %}</code><br />
+b) <code>{% block blockname readonly %}...{% endblock %}</code><br />
+c) <code>{% block blockname %}...{% endblock %}</code> with <code>{% parent() %}</code> in the block<br />
+d) <code>{% block blockname %}...{% endblock %}</code> with <code>{% final %}</code> inside the block</p>
+<p><strong>45. Which of the following statements correctly define a block in a parent template and override it in a child template?</strong><br />
+a) <code>{% block blockname %}...{% endblock %}</code> in parent and <code>{% block blockname %}...{% endblock %}</code> in child<br />
+b) <code>{% block blockname %}...{% endblock %}</code> in parent and <code>{% override blockname %}...{% endoverride %}</code> in child<br />
+c) <code>{% section blockname %}...{% endsection %}</code> in parent and <code>{% section blockname %}...{% endsection %}</code> in child<br />
+d) <code>{% define blockname %}...{% enddefine %}</code> in parent and <code>{% define blockname %}...{% enddefine %}</code> in child</p>
+<hr />
+<h3 id="key-answers">Key Answers</h3>
+<h3 id="answers-for-the-twig-3-certification-exam">Answers for the Twig 3 Certification Exam</h3>
+<p><strong>1.</strong> b) <code>{{ variable }}</code><br />
+<strong>2.</strong> a) <code>{{ variable|escape }}</code> and b) <code>{{ variable|e }}</code><br />
+<strong>3.</strong> c) <code>{# This is a comment #}</code><br />
+<strong>4.</strong> b) <code>Hello &amp;lt;b&amp;gt;World&amp;lt;/b&amp;gt;</code><br />
+<strong>5.</strong> b) Prints 'default value' if <code>variable</code> is not defined or empty</p>
+<p><strong>6.</strong> b) <code>{{ variable|upper }}</code><br />
+<strong>7.</strong> a) <code>{{ date|date('Y-m-d') }}</code><br />
+<strong>8.</strong> a) <code>{{ variable|filter1|filter2 }}</code><br />
+<strong>9.</strong> a) <code>{{ array|join(', ') }}</code><br />
+<strong>10.</strong> c) <code>{% filter upper %}{{ variable }}{% endfilter %}</code></p>
+<p><strong>11.</strong> a) <code>{% if variable is defined %}</code><br />
+<strong>12.</strong> b) <code>{% if variable is empty %}</code><br />
+<strong>13.</strong> a) <code>{% if variable is defined and variable is not empty %}</code><br />
+<strong>14.</strong> a) <code>{% if "substring" in string %}</code><br />
+<strong>15.</strong> a) <code>{% if array is iterable %}</code></p>
+<p><strong>16.</strong> d) <code>{% for item in items %}</code><br />
+<strong>17.</strong> a) <code>{% if condition %} ... {% endif %}</code><br />
+<strong>18.</strong> b) <code>{% elseif condition %}</code><br />
+<strong>19.</strong> c) <code>{% for index, item in items %}</code><br />
+<strong>20.</strong> d) <code>{% for item in items %} {% if condition %} ... {% endif %} {% endfor %}</code></p>
+<p><strong>21.</strong> a) <code>{% set variable = value %}</code><br />
+<strong>22.</strong> b) <code>{{ array[element] }}</code><br />
+<strong>23.</strong> a) <code>{{ object.property }}</code><br />
+<strong>24.</strong> a) <code>{% set variable = variable + 1 %}</code><br />
+<strong>25.</strong> a) <code>{{ condition ? 'true value' : 'false value' }}</code></p>
+<p><strong>26.</strong> a) <code>{{ cycle(['odd', 'even'], loop.index) }}</code><br />
+<strong>27.</strong> a) <code>{% include 'template.html.twig' %}</code><br />
+<strong>28.</strong> a) <code>{{ dump(variable) }}</code><br />
+<strong>29.</strong> a) <code>{{ range(1, 10) }}</code><br />
+<strong>30.</strong> a) <code>{{ length(variable) }}</code></p>
+<p><strong>31.</strong> a) <code>{% if variable1 == variable2 %}</code><br />
+<strong>32.</strong> a) <code>and</code> and c) <code>or</code><br />
+<strong>33.</strong> b) <code>{% set result = variable mod 2 %}</code><br />
+<strong>34.</strong> a) <code>~</code><br />
+<strong>35.</strong> a) <code>{% if not condition %}</code></p>
+<p><strong>36.</strong> d) <code>{% extends 'base.html.twig' %}</code><br />
+<strong>37.</strong> a) <code>{% block blockname %}...{% endblock %}</code><br />
+<strong>38.</strong> c) <code>{% embed 'template.html.twig' %}</code><br />
+<strong>39.</strong> a) <code>{% include 'fragment.html.twig' %}</code><br />
+<strong>40.</strong> a) <code>{% extends 'grandparent.html.twig' %}</code> in parent and <code>{% extends 'parent.html.twig' %}</code> in child</p>
+<p><strong>41.</strong> a) <code>{% include 'fragment.html.twig' with { 'var': value } %}</code><br />
+<strong>42.</strong> a) To refer to the parent block in a child template<br />
+<strong>43.</strong> a) <code>{{ super() }}</code><br />
+<strong>44.</strong> a) <code>{% block blockname final %}...{% endblock %}</code><br />
+<strong>45.</strong> a) <code>{% block blockname %}...{% endblock %}</code> in parent and <code>{% block blockname %}...{% endblock %}</code> in child</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--next" aria-label="Next: Summary" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Summary
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
+      
+    
+  </body>
+</html>
