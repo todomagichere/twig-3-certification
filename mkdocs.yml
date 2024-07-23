@@ -32,6 +32,8 @@ markdown_extensions:
           pygments_lang_class: true
 
 nav:
+    - Example tests:
+          - Test 1: test/test1.md
     - Summary: index.md
 #    - Basic Concepts:
 #        - Basic Twig concepts: index.md
